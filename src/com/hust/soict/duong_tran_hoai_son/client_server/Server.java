@@ -49,7 +49,7 @@ public class Server {
 						intarr[i] = Integer.parseInt(textValue);
 						i++;
 					}
-					new SelectionSort().sort(intarr);
+					new ShellSort().sort(intarr);
 					String strArray[] = Arrays.stream(intarr).mapToObj(String::valueOf).toArray(String[]::new);
 					out.println(Arrays.toString(strArray));
 				}
